@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sing-up</title>
+    <title>Sign-up</title>
     <link rel="stylesheet" href="src/css/responsive.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
@@ -43,13 +43,14 @@
           <label for="email">Email:</label>
           <span id="error-email"></span>
           <input
-          placeholder="exemple@gmail.com"
+            placeholder="exemple@gmail.com"
             class="email-adress"
             type="email"
             onblur="validarEmail()"
             onfocus="redefinirMsg()"
             id="email"
             required
+            autocomplete="off"
           />
         </div>
         <button id="botao" class="btn" type="submit">
